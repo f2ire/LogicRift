@@ -1,0 +1,275 @@
+{
+    "molecules": [
+      {
+        "id": "MOL001",
+        "name": "Glucose",
+        "Brut": "C6H12O6",
+        "category": "Ose",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL002",
+        "name": "Ribose",
+        "Brut": "C5H10O5",
+        "category": "Ose",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL003",
+        "name": "Galactose",
+        "Brut": "C6H12O6",
+        "category": "Ose",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL004",
+        "name": "Fructose",
+        "Brut": "C6H12O6",
+        "category": "Ose",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL005",
+        "name": "Saccharose",
+        "Brut": "C12H22O11",
+        "category": "Ose",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL006",
+        "name": "Glycine",
+        "Brut": "C3H7NO2",
+        "category": "Acide aminé",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL007",
+        "name": "Leucine",
+        "Brut": "C6H13NO2",
+        "category": "Acide aminé",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL008",
+        "name": "Proline",
+        "Brut": "C5H9NO2",
+        "category": "Acide aminé",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL009",
+        "name": "Lysine",
+        "Brut": "C6H14N2O2",
+        "category": "Acide aminé",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL010",
+        "name": "Phénylalanine",
+        "Brut": "C9H11NO2",
+        "category": "Acide aminé",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL011",
+        "name": "Adénosine monophosphate",
+        "Brut": "C10H14N5O7P",
+        "category": "Nucléotide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL012",
+        "name": "Cytidine monophosphate",
+        "Brut": "C9H14N2O8P",
+        "category": "Nucléotide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL013",
+        "name": "Adénosine",
+        "Brut": "C10H13N5O4",
+        "category": "Nucléotide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL014",
+        "name": "Guanosine monophosphate",
+        "Brut": "C10H14N5O6P",
+        "category": "Nucléotide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL015",
+        "name": "Acide palmitique",
+        "Brut": "C15H31COOH",
+        "category": "Lipide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL016",
+        "name": "Acide oléique",
+        "Brut": "C18H34O2",
+        "category": "Lipide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL017",
+        "name": "Triglycéride",
+        "Brut": "C57H104O6",
+        "category": "Lipide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      },
+      {
+        "id": "MOL018",
+        "name": "Cholestérol",
+        "Brut": "C27H46O",
+        "category": "Lipide",
+        "image_links": {
+          "developpee": "",
+          "semiDeveloppee": "",
+          "lewis": "",
+          "fischer": "",
+          "newman": "",
+          "haworth": "",
+          "cram": ""
+        }
+      }
+    ]
+  }
+  
