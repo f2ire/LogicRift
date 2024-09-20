@@ -1,0 +1,11 @@
+{
+  "molecules": [
+    {
+      "id": 1,
+      "name": "Glucose",
+      "brut": "C6H12O6",
+      "category": "Ose",
+      "image_links": {}
+    }
+  ]
+}
