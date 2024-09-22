@@ -33,10 +33,9 @@ namespace LogicRiftTests
             Assert.That(singleDb, Is.Not.Null);
             Assert.That(singleDb.Molecules.Count, Is.EqualTo(1));
             Assert.That(singleDb.Molecules[0].ID, Is.EqualTo(1));
-            // Uncomment when Molecule has a field Name and Brut
-            // Assert.That(singleDb.Molecules[0].Name, Is.EqualTo("Glucose"));
-            // Assert.That(singleDb.Molecules[0].Brut, Is.EqualTo("C6H12O6"));
-            Assert.That(singleDb.Molecules[0].Caterogie, Is.EqualTo("Ose"));
+            Assert.That(singleDb.Molecules[0].Name, Is.EqualTo("Glucose"));
+            Assert.That(singleDb.Molecules[0].Brut, Is.EqualTo("C6H12O6"));
+            Assert.That(singleDb.Molecules[0].Category, Is.EqualTo("Ose"));
         }
 
         [Test]
