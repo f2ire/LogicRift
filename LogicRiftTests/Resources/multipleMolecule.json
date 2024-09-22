@@ -1,5 +1,4 @@
-{
-  "molecules": [
+[
     {
       "id": 1,
       "name": "Glucose",
@@ -126,5 +125,4 @@
       "category": "Lipide",
       "image_links": {}
     }
-  ]
-}
+]

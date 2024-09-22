@@ -1,5 +1,4 @@
-{
-  "molecules": [
+[
     {
       "id": 1,
       "name": "Glucose",
@@ -7,5 +6,4 @@
       "category": "Ose",
       "image_links": {}
     }
-  ]
-}
+]
