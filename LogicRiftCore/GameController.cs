@@ -6,32 +6,32 @@ using System.Threading.Tasks;
 
 namespace LogicRiftCore
 {
-    public enum GameMode
+    public abstract class GameController(GameData gameData)
     {
-        Practice = 0,
-        Challenge = 1,
+        public GameData GameData { get; } = gameData;
+
+        public event Action<string> OnCorrectChoice;
+        public event Action<string> OnWrongChoice;
+        public event Action<Molecule> OnMoleculeDisplay;
+
+        /// <summary>
+        /// Start the game by selecting the first molecule on display
+        /// </summary>
+        public void Start()
+        {
+
+        }
+
+        /// <summary>
+        /// Generate a set of possible choices, one of the element of the set has to be the correct answer
+        /// </summary>
+        /// <param name="choicesNumber">The number of desired choices</param>
+        /// <returns>an hashset containing the choices</returns>
+        public HashSet<string> GenerateChoices(int choicesNumber)
+        {
+            return null;
+        }
+
+        public abstract bool ProcessUserInput(string input);
     }
-    public class GameController(GameData gameData)
-    {
-        public GameData GameData { get; set; } = gameData;
-        public GameMode GameMode { get; set; }
-
-        public bool IsCorrect(string input)
-        {
-            return true;
-        }
-
-        public void UpdateGameData()
-        {
-
-        }
-
-
-        public bool isLose()
-        {
-            return false; 
-        }
-    }
-
-
 }
