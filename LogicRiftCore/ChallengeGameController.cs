@@ -9,7 +9,8 @@ namespace LogicRiftCore
     public class ChallengeGameController(GameData gameData, float moleculeApparitionTime) : GameController(gameData)
     {
         public float MoleculeApparitionTime { get; } = moleculeApparitionTime; // Time between each molecule apparition in seconds
-
+        public float TotalTime = 0;
+        public float Threshold = moleculeApparitionTime;
         /// <summary>
         /// Check if the user input is the correct answer
         /// Invoke OnCorrectChoice or OnWrongChoice event according to the input
@@ -18,7 +19,18 @@ namespace LogicRiftCore
         /// <returns>True if the input is correct</returns>
         public override bool ProcessUserInput(string input)
         {
-            return false;
+            if (input == GameData.MoleculeOnDisplay[0].Name)
+            {
+                GameData.MoleculeOnDisplay.RemoveAt(0);
+                GameData.Score++;
+                OnCorrectChoiceEvent(input);
+                return true;
+            }
+            else
+            {
+                OnWrongChoiceEvent(input);
+                return false;
+            }
         }
 
         /// <summary>
@@ -27,7 +39,11 @@ namespace LogicRiftCore
         /// <returns>True if the game is lost</returns>
         public bool IsLost()
         {
-            return false;
+            foreach (Molecule molecule in GameData.MoleculeOnDisplay)
+                if (molecule.Lifetime <= 0) {
+                    return true;
+                }
+            return false;    
         }
 
         /// <summary>
@@ -37,6 +53,16 @@ namespace LogicRiftCore
         /// <param name="deltaTime">The time ellapsed between the last update, in seconds</param>
         public void UpdateGameData(float deltaTime)
         {
+            TotalTime += deltaTime;
+            while (TotalTime > Threshold)
+            {   
+                GenerateNewMoleculeOnDisplay();
+                Threshold += MoleculeApparitionTime;
+            }
+            foreach (Molecule molecule in GameData.MoleculeOnDisplay)
+            {
+                molecule.Lifetime -= deltaTime;
+            }
 
         }
     }

@@ -17,7 +17,19 @@ namespace LogicRiftCore
         /// <returns>True if the input is correct</returns>
         public override bool ProcessUserInput(string input)
         {
-            return false;
+            if (input == GameData.MoleculeOnDisplay[0].Name)
+            {
+                GameData.MoleculeOnDisplay.RemoveAt(0);
+                GenerateNewMoleculeOnDisplay();
+                GameData.Score ++;
+                OnCorrectChoiceEvent(input);
+                return true;
+            }
+            else
+            {
+                OnWrongChoiceEvent(input);
+                return false;
+            }
         }
     }
 }

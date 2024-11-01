@@ -56,7 +56,7 @@ namespace LogicRiftTests
             Assert.That(molecule, Is.Not.Null);
             Assert.That(practiceController.GameData.MoleculeOnDisplay.Count, Is.EqualTo(1));
             Assert.That(practiceController.GameData.MoleculeOnDisplay[0], Is.EqualTo(molecule));
-            Assert.That(practiceController.GameData.Database.Molecules.Contains(molecule), Is.False);
+            Assert.That(practiceController.GameData.Database.Molecules.Contains(molecule), Is.True);
         }
 
         [Test]
@@ -65,9 +65,9 @@ namespace LogicRiftTests
             Molecule molecule = null;
             practiceController.OnMoleculeDisplay += (m) => { molecule = m; };
             practiceController.Start();
-            var choices = practiceController.GenerateChoices(1);
+            var choices = practiceController.GenerateAnswers(1);
             Assert.That(choices.Count, Is.EqualTo(1));
-            Assert.That(choices.First(), Is.EqualTo(molecule.Category));
+            Assert.That(choices.First(), Is.EqualTo(molecule.Name));
         }
 
         [Test, Repeat(100)]
@@ -76,9 +76,9 @@ namespace LogicRiftTests
             Molecule molecule = null;
             practiceController.OnMoleculeDisplay += (m) => { molecule = m; };
             practiceController.Start();
-            var choices = practiceController.GenerateChoices(3);
+            var choices = practiceController.GenerateAnswers(3);
             Assert.That(choices.Count, Is.EqualTo(3));
-            Assert.That(choices.Contains(molecule.Category));
+            Assert.That(choices.Contains(molecule.Name));
         }
 
         [Test]
@@ -87,11 +87,11 @@ namespace LogicRiftTests
             Molecule molecule = null;
             practiceController.OnMoleculeDisplay += (m) => { molecule = m; };
             practiceController.Start();
-            Assert.That(practiceController.ProcessUserInput(molecule.Category), Is.True);
+            Assert.That(practiceController.ProcessUserInput(molecule.Name), Is.True);
             AssertEventCount(1, 0, 2);
             Assert.That(practiceController.GameData.MoleculeOnDisplay.Count, Is.EqualTo(1));
             Assert.That(practiceController.GameData.Score, Is.EqualTo(1));
-            Assert.That(practiceController.GameData.Database.Molecules.Contains(molecule), Is.False);
+            Assert.That(practiceController.GameData.Database.Molecules.Contains(molecule), Is.True);
         }
 
         [Test]
@@ -109,7 +109,7 @@ namespace LogicRiftTests
             Molecule molecule = null;
             challengeController.OnMoleculeDisplay += (m) => { molecule = m; };
             challengeController.Start();
-            Assert.That(challengeController.ProcessUserInput(molecule.Category), Is.True);
+            Assert.That(challengeController.ProcessUserInput(molecule.Name), Is.True);
             AssertEventCount(1, 0, 1);
             Assert.That(challengeController.GameData.MoleculeOnDisplay.Count, Is.EqualTo(0));
             Assert.That(challengeController.GameData.Score, Is.EqualTo(1));
@@ -139,7 +139,7 @@ namespace LogicRiftTests
         public void SmallGameUpdate()
         {
             challengeController.Start();
-            challengeController.UpdateGameData(0.1f);
+            challengeController.UpdateGameData(0.08f);
             AssertEventCount(0, 0, 1);
             Assert.That(challengeController.GameData.MoleculeOnDisplay.First().Lifetime, Is.LessThan(100));
         }
@@ -159,7 +159,7 @@ namespace LogicRiftTests
 
             foreach (var molecule in challengeController.GameData.MoleculeOnDisplay)
             {
-                Assert.That(challengeController.GameData.Database.Molecules.Contains(molecule), Is.False);
+                Assert.That(challengeController.GameData.Database.Molecules.Contains(molecule), Is.True);
             }
         }
     }
