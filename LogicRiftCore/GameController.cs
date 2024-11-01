@@ -58,7 +58,7 @@ namespace LogicRiftCore
 
         protected void GenerateNewMoleculeOnDisplay(int position = -1)
         {
-            if (position < -1 | position > GameData.MoleculeOnDisplay.Count)
+            if (position < -1 || position > GameData.MoleculeOnDisplay.Count)
             {
                 throw new InvalidOperationException("Index can't be negative or bigger than the size of the list");
             }

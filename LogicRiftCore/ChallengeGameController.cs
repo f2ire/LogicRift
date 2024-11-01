@@ -9,7 +9,7 @@ namespace LogicRiftCore
     public class ChallengeGameController(GameData gameData, float moleculeApparitionTime) : GameController(gameData)
     {
         public float MoleculeApparitionTime { get; } = moleculeApparitionTime; // Time between each molecule apparition in seconds
-        public float TotalTime = 0;
+        public float TimeSinceLastApparition = 0;
         public float Threshold = moleculeApparitionTime;
         /// <summary>
         /// Check if the user input is the correct answer
@@ -53,17 +53,20 @@ namespace LogicRiftCore
         /// <param name="deltaTime">The time ellapsed between the last update, in seconds</param>
         public void UpdateGameData(float deltaTime)
         {
-            TotalTime += deltaTime;
-            while (TotalTime > Threshold)
-            {   
-                GenerateNewMoleculeOnDisplay();
-                Threshold += MoleculeApparitionTime;
-            }
             foreach (Molecule molecule in GameData.MoleculeOnDisplay)
             {
                 molecule.Lifetime -= deltaTime;
             }
 
+            TimeSinceLastApparition += deltaTime;
+
+            while (TimeSinceLastApparition > moleculeApparitionTime)
+            {
+                TimeSinceLastApparition -= moleculeApparitionTime;
+                GenerateNewMoleculeOnDisplay();
+                GameData.MoleculeOnDisplay.Last().Lifetime -= TimeSinceLastApparition; 
+
+            }
         }
     }
 }

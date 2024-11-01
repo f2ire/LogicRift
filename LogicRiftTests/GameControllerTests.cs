@@ -139,7 +139,7 @@ namespace LogicRiftTests
         public void SmallGameUpdate()
         {
             challengeController.Start();
-            challengeController.UpdateGameData(0.08f);
+            challengeController.UpdateGameData(0.1f);
             AssertEventCount(0, 0, 1);
             Assert.That(challengeController.GameData.MoleculeOnDisplay.First().Lifetime, Is.LessThan(100));
         }
