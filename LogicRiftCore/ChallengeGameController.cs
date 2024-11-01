@@ -40,9 +40,12 @@ namespace LogicRiftCore
         public bool IsLost()
         {
             foreach (Molecule molecule in GameData.MoleculeOnDisplay)
-                if (molecule.Lifetime <= 0) {
+            {
+                if (molecule.Lifetime <= 0)
+                {
                     return true;
                 }
+            }
             return false;    
         }
 
@@ -55,7 +58,7 @@ namespace LogicRiftCore
         {
             foreach (Molecule molecule in GameData.MoleculeOnDisplay)
             {
-                molecule.Lifetime -= deltaTime;
+                molecule.Lifetime -= deltaTime * GameData.Speed;
             }
 
             TimeSinceLastApparition += deltaTime;
@@ -64,7 +67,7 @@ namespace LogicRiftCore
             {
                 TimeSinceLastApparition -= moleculeApparitionTime;
                 GenerateNewMoleculeOnDisplay();
-                GameData.MoleculeOnDisplay.Last().Lifetime -= TimeSinceLastApparition; 
+                GameData.MoleculeOnDisplay.Last().Lifetime -= TimeSinceLastApparition * GameData.Speed; 
 
             }
         }
