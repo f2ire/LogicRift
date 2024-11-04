@@ -1,0 +1,130 @@
+[
+	  {
+		"id": 1,
+		"name": "Glucose",
+		"brut": "C6H12O6",
+		"category": "Ose",
+		"image_links": {}
+	  },
+	  {
+		"id": 2,
+		"name": "Ribose",
+		"brut": "C5H10O5",
+		"category": "Ose",
+		"image_links": {}
+	  },
+	  {
+		"id": 3,
+		"name": "Galactose",
+		"brut": "C6H12O6",
+		"category": "Ose",
+		"image_links": {}
+	  },
+	  {
+		"id": 4,
+		"name": "Fructose",
+		"brut": "C6H12O6",
+		"category": "Ose",
+		"image_links": {}
+	  },
+	  {
+		"id": 5,
+		"name": "Saccharose",
+		"brut": "C12H22O11",
+		"category": "Ose",
+		"image_links": {}
+	  },
+	  {
+		"id": 6,
+		"name": "Glycine",
+		"brut": "C3H7NO2",
+		"category": "Acide aminé",
+		"image_links": {}
+	  },
+	  {
+		"id": 7,
+		"name": "Leucine",
+		"brut": "C6H13NO2",
+		"category": "Acide aminé",
+		"image_links": {}
+	  },
+	  {
+		"id": 8,
+		"name": "Proline",
+		"brut": "C5H9NO2",
+		"category": "Acide aminé",
+		"image_links": {}
+	  },
+	  {
+		"id": 9,
+		"name": "Lysine",
+		"brut": "C6H14N2O2",
+		"category": "Acide aminé",
+		"image_links": {}
+	  },
+	  {
+		"id": 10,
+		"name": "Phénylalanine",
+		"brut": "C9H11NO2",
+		"category": "Acide aminé",
+		"image_links": {}
+	  },
+	  {
+		"id": 11,
+		"name": "Adénosine monophosphate",
+		"brut": "C10H14N5O7P",
+		"category": "Nucléotide",
+		"image_links": {}
+	  },
+	  {
+		"id": 12,
+		"name": "Cytidine monophosphate",
+		"brut": "C9H14N2O8P",
+		"category": "Nucléotide",
+		"image_links": {}
+	  },
+	  {
+		"id": 13,
+		"name": "Adénosine",
+		"brut": "C10H13N5O4",
+		"category": "Nucléotide",
+		"image_links": {}
+	  },
+	  {
+		"id": 14,
+		"name": "Guanosine monophosphate",
+		"brut": "C10H14N5O6P",
+		"category": "Nucléotide",
+		"image_links": {}
+	  },
+	  {
+		"id": 15,
+		"name": "Acide palmitique",
+		"brut": "C15H31COOH",
+		"category": "Lipide",
+		"image_links": {}
+	  },
+	  {
+		"id": 16,
+		"name": "Acide oléique",
+		"brut": "C18H34O2",
+		"category": "Lipide",
+		"image_links": {}
+	  },
+	  {
+		"id": 17,
+		"name": "Triglycéride",
+		"brut": "C57H104O6",
+		"category": "Lipide",
+		"image_links": {}
+	  },
+	  {
+		"id": 18,
+		"name": "Cholestérol",
+		"brut": "C27H46O",
+		"category": "Lipide",
+		"image_links": {}
+	  }
+]
+
+  
