@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbg8tmmjtjpyc"]
+
+[ext_resource type="Texture2D" uid="uid://caxtovr8p0gyo" path="res://icon.svg" id="1_3dv4h"]
+
+[node name="ChallengeGame" type="Node"]
+
+[node name="Node2D" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1155.0
+offset_top = 653.0
+offset_right = 1155.0
+offset_bottom = 653.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -3.14206
+scale = Vector2(1.00001, 1.00535)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_3dv4h")

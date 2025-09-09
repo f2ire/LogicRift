@@ -1,0 +1,17 @@
+oui 1 scene boutonChoix:
+
+1 scene molecule: 
+
+1 scece practice 
+prendre tout les boutons qui apparaissant sans jouer sur le gameplay)
+
+1 scene challenge
+
+faire un script "manager" qui permet d'update le score
+
+oui 1 scene menu principal
+
+
+
+
+1 scence setting
